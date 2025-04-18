@@ -3,14 +3,6 @@ const navbar = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
 let isMenuOpen = false;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
-
 // Mobile menu toggle
 function toggleMobileMenu() {
   isMenuOpen = !isMenuOpen;
